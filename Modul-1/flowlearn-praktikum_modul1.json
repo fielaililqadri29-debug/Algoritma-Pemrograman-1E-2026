@@ -1,0 +1,269 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 430,
+      "y": 55,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "harga_buku =25000",
+      "x": 410,
+      "y": 137,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "input",
+      "text": "jumlah_buku =3",
+      "x": 409,
+      "y": 235,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 5,
+      "type": "input",
+      "text": "harga_bulpen =8000",
+      "x": 404,
+      "y": 322,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 6,
+      "type": "input",
+      "text": "jumlah_bulpen =2",
+      "x": 399,
+      "y": 414,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "input",
+      "text": "harga_flashdisk =75000",
+      "x": 398,
+      "y": 514,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 8,
+      "type": "input",
+      "text": "jumlah_flashdisk =1",
+      "x": 395,
+      "y": 616,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "saldo_dompet =2*100000",
+      "x": 401,
+      "y": 719,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 10,
+      "type": "process",
+      "text": "total_buku =harga_buku*jumlah_buku",
+      "x": 398,
+      "y": 813,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "total_bulpen =harga_bulpen*jumlah_bulpen",
+      "x": 396,
+      "y": 910,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "total_flashdisk =harga_flashdisk",
+      "x": 396,
+      "y": 1006,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "total_sebelum_diskon =total_buku+total_bulpen+total_flashdisk",
+      "x": 390,
+      "y": 1116,
+      "w": 190,
+      "h": 100
+    },
+    {
+      "id": 14,
+      "type": "process",
+      "text": "diskon =0.1*total_sebelum_diskon",
+      "x": 396,
+      "y": 1250,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 15,
+      "type": "process",
+      "text": "harga_setelah_diskon =total_sebelum_diskon",
+      "x": 396,
+      "y": 1353,
+      "w": 180,
+      "h": 85
+    },
+    {
+      "id": 16,
+      "type": "process",
+      "text": "pajak =0.11*harga_setelah_diskon",
+      "x": 398,
+      "y": 1474,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 17,
+      "type": "process",
+      "text": "total_bayar =harga_setelah_diskon+pajak",
+      "x": 399,
+      "y": 1577,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 18,
+      "type": "process",
+      "text": "kembalian =saldo_dompet-total_bayar",
+      "x": 399,
+      "y": 1678,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 19,
+      "type": "output",
+      "text": "total_buku,total_bulpen,total_flashdisk,total_sebelum_diskon,diskon,harga_setelah_diskon,pajak,total_bayar,kembalian",
+      "x": 394,
+      "y": 1778,
+      "w": 190,
+      "h": 150
+    },
+    {
+      "id": 21,
+      "type": "end",
+      "text": "End",
+      "x": 413,
+      "y": 1963,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "branch": null
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "branch": null
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "branch": null
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "branch": null
+    }
+  ],
+  "nextId": 22
+}
